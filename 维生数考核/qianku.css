@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 让padding不撑开盒子 */
+    box-sizing: border-box;
+}
+.w {
+    width: 63%;
+    margin: 0 auto;
+}
+a {
+    color: #333333;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.header {
+    height: 40px;
+    margin-top: 22px;
+}
+.logo a {
+    float: left;
+    display: block;
+    font-size: 32px;
+    width: 200px;
+    text-align: right;
+    padding-left: 70px;
+    background: url(images/logo.png) no-repeat bottom;
+}
+.header ul li {
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    margin-left: 50px;
+}
+.header ul li:hover {
+    border-bottom: 1px solid #333333;
+}
+.header ul li::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.box {
+    width: 100%;
+    height: 688px;
+    position: relative;
+    margin-top: 25px;
+}
+.box .point {
+    height: 43px;
+    width: 43px;
+    z-index: 1;
+}
+.box .left {
+    position: absolute;
+    top: 295px;
+    left: 165px;
+    z-index: 1;
+}
+.box .right {
+    position: absolute;
+    top: 295px;
+    right: 165px;
+    z-index: 1;
+}
+.box .select {
+    position: absolute;
+    margin-top: 630px;
+    left: 50%;
+    margin-left: -135px;
+    z-index: 1;
+}
+.box .select img {
+    padding-left: 40px;
+}
+.box .word {
+    position: absolute;
+    display: inline;
+    font-size: 110px;
+    color: #ffffff;
+    left: 50%;
+    margin-left:-332px;
+    padding-top: 200px;
+    z-index: 3;
+}
+.box .picture {
+    width: 100%;
+    height: 100%;
+}
+.box .picture1 {
+    position: absolute;
+    background: url(images/background.png) no-repeat center;
+}
+.box .picture2 {
+    position: absolute;
+    background:url(images/rect.png) no-repeat center ;
+    /* opacity: 0.5; */
+}
+.box .line {
+    height: 3px;
+    width: 190px;
+    position: absolute;
+    margin-top: 360px;
+    left: 50%;
+    margin-left: -95px;
+    background-color: #fff;
+    z-index: 3;
+}
+.box .word1 {
+    position: absolute;
+    font-size: 34px;
+    color: #fff;
+    margin-top: 380px;
+    left: 50%;
+    margin-left: -64px;
+}
+.box .word2 {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 433px;
+    left: 50%;
+    margin-left: -130px;
+}
+.rect {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left:-395px;
+    margin-top: 95px;
+    z-index: 1;
+}
+.rect1 {
+    background: url(images/3.1.png) no-repeat center;
+}
+.rect2 {
+    background: url(images/3.2.png) no-repeat center;
+}
+.rect3 {
+    background: url(images/3.png) no-repeat center;
+}
+/* 方案模块 */
+.scheme {
+    position: relative;
+    margin-top: 125px;
+    height: 688px;
+    text-align: center;
+}
+.line1 {
+    float: left;
+    margin-top: 28px;
+    margin-left: 5px;
+    width: 495px;
+    height: 1px;
+    background-color: #636363;
+}
+.line2 {
+    float: right;
+    margin-top: 28px;
+    margin-right: 5px;
+    width: 495px;
+    height: 1px;
+    background-color: #636363;
+}
+.title1 {
+    float: left;
+    margin-left: 45px;
+    width: 115px;
+    font-size: 28px;
+    color: #636363;
+}
+.title2 {
+    float: left;
+    left: 50%;
+    margin-left: -119px;
+    margin-top: 33px;
+    width: 126px;
+    font-size: 16px;
+    color: #636363;
+}
+.scheme .design1 {
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 30px;
+    width: 270px;
+    height: 270px;
+    background: url(images/19244.png) center no-repeat;
+}
+.scheme .design2 {
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 318px;
+    width: 270px;
+    height: 270px;
+}
+.scheme .design3 {
+    position: absolute;
+    width: 558px;
+    height: 270px;
+    margin-top: 412px;
+    margin-left: 30px;
+    background: url(images/4007.png) no-repeat ;
+    background-size: cover;
+}
+.scheme .design4 {
+    position: absolute;
+    margin-left: 610px;
+    margin-top: 125px;
+}
+/* 加入我们模块 */
+.join {
+    position: relative;
+    margin-top: 144px;
+    height: 458px;
+    background: url(images/3039.png) no-repeat;
+}
+.darkbig {
+    position: absolute;
+    background: url(images/rect12.png) no-repeat;
+    /* opacity: 0.8; */
+    width: 100%;
+    height: 100%;
+}
+.darksmall {
+    position: absolute;
+    background: url(images/rect14.png) no-repeat center;
+    /* opacity: 0.8; */
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.joinword {
+    position: absolute;
+    z-index: 3;
+    margin-top: 105px;
+    margin-left: 710px;
+    font-size: 60px;
+    color: #fff;
+}
+.joinword2 {
+    position: absolute;
+    z-index: 3;
+    margin-top: 105px;
+    margin-left: 590px;
+    margin-top: 215px;
+    font-size: 58px;
+    /* font-family: STKaiti; */
+    color: #fff;
+}
+.joinus {
+    position: absolute;
+    z-index: 3;
+    margin-top: 323px;
+    margin-left: 825px;
+    width: 268px;
+    height: 68px;
+    line-height: 68px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background: url(images/rect4.png) no-repeat;
+}
+.case {
+    position: relative;
+    margin-top: 125px;
+    height: 740px;
+    text-align: center;
+}
+.casecontent {
+    position: absolute;
+    margin-top: 172px;
+    margin-left: 13px;
+    width: 1170px;
+}
+.casecontent .casepicture {
+    position: relative;
+    float: left;
+    width: 234px;
+    height: 563px;
+}
+.casecontent .casepicture:nth-child(1) {
+    background: url(images/19244.png) no-repeat top;
+}
+.casecontent .casepicture:nth-child(2) {
+    background: url(images/43903.png) no-repeat bottom;
+}
+.casecontent .casepicture:nth-child(3) {
+    background: url(images/7143.png) no-repeat top;
+}
+.casecontent .casepicture:nth-child(4) {
+    background: url(images/16784.png) no-repeat bottom;
+}
+.casecontent .casepicture:nth-child(5) {
+    background: url(images/19382.png) no-repeat top;
+}
+.casewords {
+    position: absolute;
+    left: 50%;
+    margin-left: -34px;
+    width: 68px;
+    font-size: 16px;
+    color: #636363;
+}
+/* 不知道为什么这里用不了伪类选择器 */
+/* .casecontent .casewords:nth-child(2n-1) {
+    margin-top: 475px;
+}
+.casecontent .casewords:nth-child(2n) {
+    margin-top: 38px;
+}
+ */
+.casecontent .casewords1 {
+    margin-top: 475px;
+}
+.casecontent .casewords2 {
+    margin-top: 38px;
+}
+.casecontent .casewords3 {
+    margin-top: 475px;
+}
+.casecontent .casewords4 {
+    margin-top: 38px;
+}
+.casecontent .casewords5 {
+    margin-top: 475px;
+}
+/* 签约流程 */
+.process {
+    position: relative;
+    margin-top: 165px;
+    width: 100%;
+    height: 413px;
+    background-color: #f0f0f0;
+}
+.processtrue {
+    padding-top: 73px;
+} 
+.process .content1 {
+    position: absolute;
+    margin-top: 144px;
+    left: 50%;
+    margin-left: -247px;
+    font-size: 16px;
+    color: #b4b4b4;
+}
+.process .course {
+    position: absolute;
+    margin-top: 200px;
+    left: 50%;
+    margin-left: -555px;;
+}
+.process .rct {
+    display: inline-block;
+    margin-left: 90px;
+    width: 245px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    background: url(images/14.png) no-repeat;
+}
+.process .arrow {
+    position: absolute;
+    margin-top: -25px;
+    width: 90px;
+    height: 40px;
+    background: url(images/7.png) no-repeat;
+}
+.process .arrow1 {
+    margin-left: 345px;
+}
+.process .arrow2 {
+    margin-left: 686px;
+}
+/* 关于我们 */
+.about {
+    position: relative;
+    margin-top: 146px;
+}
+.about .content1 {
+    position: absolute;
+    margin-top: 100px;
+    left: 50%;
+    margin-left: -247px;
+    font-size: 16px;
+    color: #b4b4b4;
+}
+.about .box {
+    position: absolute;
+    margin-top: 21px;
+}
+.about .picture {
+    position: absolute;
+    margin-right: 0;
+    background: url(images/4008.png) left no-repeat;
+}
+.about .box .box1 {
+    position: absolute;
+    margin-left: 620px;
+    margin-top: 165px;
+    width: 580px;
+    height: 360px;
+    border-top: 5px solid #f3f5f5;
+    border-bottom: 42px solid #f3f5f5;
+}
+.about .box .word1 {
+    position: absolute;
+    margin-top: 28px;
+    margin-left: -285px;
+    font-size: 25px;
+    color: #000;
+}
+.about .box .word2 {
+    position: absolute;
+    margin-top: 85px;
+    margin-left: -280px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 35px;
+    color: #888888;
+}
+.about .box .more {
+    position: absolute;
+    margin-left: 445px;
+    margin-top: 315px;
+    width: 135px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background: url(images/539.png) no-repeat;
+}
+.connect {
+    position: relative;
+    margin-top: 825px;
+    width: 100%;
+    height: 742px;
+    background: url(images/4007.png) no-repeat;
+}
+.connect .dark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(images/11.png) no-repeat;
+}
+.connect .word1 {
+    position: absolute;
+    left: 50%;
+    margin-left: -94px;
+    margin-top: 148px;
+    width: 188px;
+    height: 45px;
+    font-size: 45px;
+    color: #fff;
+}
+.connect .word2 {
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+    margin-top: 215px;
+    width: 188px;
+    height: 25px;
+    font-size: 25px;
+    color: #ffffff;
+}
+.connect .box1 {
+    position: absolute;
+    margin-top: 336px;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
+    height: 45px;
+    background: url(images/12.png) no-repeat;
+}
+.connect .word3 {
+    position: absolute;
+    margin-left: 190px;
+}
+.connect .word3 a {
+    padding-left: 105px;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.connect .bottom {
+    position: absolute;
+    margin-top: 445px;
+    left: 50%;
+    margin-left: -356px;
+    width: 716px;
+    height: 113px;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #ffffff;
+}
+
